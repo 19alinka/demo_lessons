@@ -15,6 +15,7 @@ public class IsEven {
         // TODO implement
         // Допустимые строки: "Четное" или "Нечетное"
         if (n % 2 == 0);
+        else System.out.println("Нечетное");
         return "Четное";
 
     }
