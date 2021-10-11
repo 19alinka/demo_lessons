@@ -6,7 +6,7 @@ public class IsEven {
     записанное в переменную n, чётным либо нечётным.
      */
     public static void main(String[] args) {
-        int n = 23;
+        int n = 24;
 
         System.out.println(isEven(n));
     }
@@ -15,8 +15,10 @@ public class IsEven {
         // TODO implement
         // Допустимые строки: "Четное" или "Нечетное"
         if (n % 2 == 0);
-        else System.out.println("Нечетное");
+        else return "Нечетное";
         return "Четное";
+
+
 
     }
 }
