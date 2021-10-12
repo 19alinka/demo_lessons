@@ -13,10 +13,12 @@ public class Dividers {
         int n = scanner.nextInt();
 
         // TODO implement
-        for (int i = n; i > 0; i--) {
-            int b = n % i;
-            if (b == 0)
+        int c = 0;
+        for (int i = 1; i <= n; i++) {
+            if ((n % i) == 0) {
+                c++;
                 System.out.print(i + " ");
+            }
         }
     }
 }
