@@ -16,18 +16,6 @@ public class DigitsSum {
 
         System.out.println(digitSum);
     }
-    public static int digitSum(int n) {
-        for (int a = 0; n != 0; n /= 10) {
-            ++a;
-            if (a == 3) {
-                int n1 = (n / 10) % 10;
-                int n2 = n % 10;
-                int n3 = n / 100;
-                return n1 + n2 + n3;
-            }
-        }
-            return 0;
-    }
 
     public static int digitSum2(int n) {
         int sum = 0;
