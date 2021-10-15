@@ -19,7 +19,7 @@ public class Factorial {
 
     public static long factorial(int n) {
         // TODO implement
-        int b = 1;
+        long b = 1;
         for(int i = 1; i <= n; i++) {
             b *= i;
         }
