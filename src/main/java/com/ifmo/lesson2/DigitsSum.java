@@ -12,15 +12,16 @@ public class DigitsSum {
 
         int n = scanner.nextInt();
 
-        int digitSum = digitSum2(n);
+        int digitSum = digitSum(n);
 
         System.out.println(digitSum);
     }
 
-    public static int digitSum2(int n) {
-        int sum = 0;
+    public static int digitSum(int n) {
+        int sum = 0; //  n = 24
         for (; n != 0; n /= 10) {
-            sum += n % 10;
+            sum += n % 10; // 24 % 10 = 4; 2
+            // n = n / 10
         }
         return sum;
     }
