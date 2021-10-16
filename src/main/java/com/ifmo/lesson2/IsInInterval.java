@@ -26,7 +26,7 @@ public class IsInInterval {
     public static String isInInterval(int rnd) {
         // TODO implement
         int b = 0;
-        if (rnd >= 25 && rnd <= 100)
+        if (rnd > 24 && rnd <= 100)
             return ("Число " + rnd + " содержится в интервале (25,100)");
         if (rnd >= 5 && rnd <= 24)
             return ("Число " + rnd + " не содержится в интервале (25,100)");
