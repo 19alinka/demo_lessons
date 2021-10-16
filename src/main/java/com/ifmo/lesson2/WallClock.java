@@ -47,7 +47,7 @@ public class WallClock {
     public static String remainingHours(int rndSecond) {
         // TODO implement
         if (rndSecond < 3600) return "Осталось менее часа";
-        if (rndSecond >= 3600 && rndSecond < 7200) return "Осталось 1 час";
+        if (rndSecond >= 3600 && rndSecond < 7200) return "Остался 1 час";
         if (rndSecond >= 7200 && rndSecond < 10800) return "Осталось 2 часа";
         if (rndSecond >= 10800 && rndSecond < 14400) return "Осталось 3 часа";
         if (rndSecond >= 14400 && rndSecond < 18000) return "Осталось 4 часа";
