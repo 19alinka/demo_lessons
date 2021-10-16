@@ -50,7 +50,7 @@ public class WallClock {
         if (rndSecond >= 7200 && rndSecond < 10800) return "Осталось 2 часа";
         if (rndSecond >= 10800 && rndSecond < 14400) return "Осталось 3 часа";
         if (rndSecond >= 14400 && rndSecond < 18000) return "Осталось 4 часа";
-        if (rndSecond >= 18000 && rndSecond < 21600) return "Осталось 5 часа";
+        if (rndSecond >= 18000 && rndSecond < 21600) return "Осталось 5 часов";
         if (rndSecond >= 21600 && rndSecond < 25200) return "Осталось 6 часов";
         if (rndSecond >= 25200 && rndSecond <= 28799) return "Осталось 7 часов";
         if (rndSecond == 28800) return "Осталось 8 часов";
