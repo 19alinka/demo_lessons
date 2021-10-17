@@ -1,6 +1,6 @@
 package com.ifmo.lesson2;
 
-public class LuckyTickets {
+public class LuckyTickets<n> {
     /*
     В городе N проезд в трамвае осуществляется по бумажным отрывным билетам. Каждую
     неделю трамвайное депо заказывает в местной типографии рулон билетов с номерами от
@@ -18,18 +18,19 @@ public class LuckyTickets {
     public static int luckyTickets() {
         // TODO implement
         int y = 0;
-        int w = 000_001;
-        for ( int r = 0; r < 999998; r++) {
-            w++;
-            int n1 = w % 10; // 7
-            int n2 = n1 % 10; // 6
-            int n3 = n2 % 10; // 5
-            int n4 = n3 % 10; // 4
-            int n5 = n4 % 10; // 3
-            int n6 = w / 1000000; // 2
-            if (n1 + n2 + n3 == n4 + n5 + n6) y++;
+        for (int r = 1; r <= 999; r++) {
+            int n1 = (r / 10) % 10;
+            int n2 = r % 10;
+            int n3 = r / 100;
+            int s = n1 + n2 + n3;
+            for (int p = 0; p <= 999; p++) {
+                int a1 = (p / 10) % 10;
+                int a2 = p % 10;
+                int a3 = p / 100;
+                int l = a1 + a2 + a3;
+                if (s == l) y++;
+            }
         }
         return y;
-
     }
 }
