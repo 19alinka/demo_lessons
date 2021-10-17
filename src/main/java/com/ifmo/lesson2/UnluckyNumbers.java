@@ -19,8 +19,7 @@ public class UnluckyNumbers {
         int b = 0;
         for (int i = 1; i <= 99999; i++) {
             String s = "" + i;
-            if (s.contains("13")) b++;
-            if (s.contains("4")) b++;
+            if (s.contains("4") || s.contains("13")) b++;
         }
         return b;
     }
