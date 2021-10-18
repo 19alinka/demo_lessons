@@ -23,19 +23,18 @@ public class SquareEquation {
      */
     public static double[] squareEquationRoots(double a, double b, double c) {
         // TODO implement
-        int d = (int) ((b * b) - (4 * a * c));
-        if (d < 0) {
-            System.out.println("Корней нет");
-        }
-        if (d == 0) {
-            double r = -b / (2 * a);
-            System.out.println("Корень квадратного уровнения = " + r);
-        }
+        double[] s = new double[2];
+        double d = (int) ((b * b) - (4 * a * c));
         if (d > 0) {
             double e = (-b + Math.sqrt(d)) / (2 * a);
             double y = (-b - Math.sqrt(d)) / (2 * a);
-            System.out.println("Первый корень квадратного уровнения = " + e);
-            System.out.println("Первый корень квадратного уровнения = " + y);
+            s[0] = e;
+            s[1] = y;
+            return s;
+        } else if (d == 0) {
+            double t = (-b / (2 * a));
+            s[0] = t;
+            return s;
         }
         return null;
     }
