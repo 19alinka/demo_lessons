@@ -24,6 +24,7 @@ public class SquareEquation {
     public static double[] squareEquationRoots(double a, double b, double c) {
         // TODO implement
         double[] s = new double[2];
+        double[] p = new double[1];
         double d = (int) ((b * b) - (4 * a * c));
         if (d > 0) {
             double e = (-b + Math.sqrt(d)) / (2 * a);
@@ -33,10 +34,8 @@ public class SquareEquation {
             return s;
         } else if (d == 0) {
             double t = (-b / (2 * a));
-            double r = 0;
-            s[0] = r;
-            s[1] = t;
-            return s;
+            p[0] = t;
+            return p;
         }
         return null;
     }
