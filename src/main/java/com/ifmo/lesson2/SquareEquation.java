@@ -33,7 +33,9 @@ public class SquareEquation {
             return s;
         } else if (d == 0) {
             double t = (-b / (2 * a));
-            s[0] = t;
+            double r = 0;
+            s[0] = r;
+            s[1] = t;
             return s;
         }
         return null;
