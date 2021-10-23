@@ -32,15 +32,18 @@ public class Random12 {
 
     public static int max(int[] randomNumbers) {
         // TODO implement
-        int[] c = Arrays.copyOf(randomNumbers, 12);
-        Arrays.sort(randomNumbers);
-        int max = randomNumbers[11];
+        int[] c = Arrays.copyOf(randomNumbers(), 12);
+        int max = randomNumbers[0];
+        for (int j : randomNumbers) {
+            if (j > max)
+                max = j;
+        }
         return max;
     }
 
     public static int lastIndexOf(int[] randomNumbers, int max) {
         // TODO implement
-        int [] y = Arrays.copyOf(randomNumbers, 12);
+        int [] y = randomNumbers;
         int maxLastIndex = Arrays.binarySearch(randomNumbers, max);
         return maxLastIndex;
     }
