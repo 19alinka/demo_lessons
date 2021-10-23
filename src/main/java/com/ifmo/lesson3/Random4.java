@@ -31,8 +31,7 @@ public class Random4 {
         // TODO implement
         if (randomNumbers[0] < randomNumbers[1]
                 && randomNumbers[1] < randomNumbers[2]
-                && randomNumbers[2] < randomNumbers[3]
-                && randomNumbers[3] < randomNumbers[4])
+                && randomNumbers[2] < randomNumbers[3])
             return true;
             else return false;
     }
