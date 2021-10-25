@@ -1,6 +1,7 @@
 package com.ifmo.lesson3;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class TwoArrays {
     /*
@@ -10,14 +11,14 @@ public class TwoArrays {
      сообщите, что их средние арифметические равны).
      */
     public static void main(String[] args) {
-        int[] randomNumbers1 = randomNumbers1();
-        int[] randomNumbers2 = randomNumbers2();
+        int[] randomNumbers1 = randomNumbers();
+        int[] randomNumbers2 = randomNumbers();
         System.out.println(Arrays.toString(randomNumbers1));
         System.out.println(Arrays.toString(randomNumbers2));
         // TODO implement
 
-        int average1 = average1(randomNumbers1);
-        int average2 = average2(randomNumbers2);
+        int average1 = average(randomNumbers1);
+        int average2 = average(randomNumbers2);
         if (average1 > average2)
             System.out.println("В первом массиве среднее арифмитическое больше");
         if (average2 > average1)
@@ -28,40 +29,27 @@ public class TwoArrays {
         // TODO implement
     }
 
-    public static int[] randomNumbers1() {
+    public static int[] randomNumbers() {
         // TODO implement
-        int[] randomNumbers1 = new int[5];
-        for (int i = 0; i < randomNumbers1.length; i++) {
-            int d = (int) (Math.random() * (5 - 0) + 0);
-            randomNumbers1[i] = d;
+        int[] randomNumbers = new int[5];
+        Random random = new Random();
+        for (int i = 0; i < randomNumbers.length; i++) {
+//            int d = (int) (Math.random() * (5 - 0) + 0);
+            int d = random.nextInt(6);
+            randomNumbers[i] = d;
         }
-        return randomNumbers1;
-    }
-    public static int[] randomNumbers2() {
-        // TODO implement
-        int[] randomNumbers2 = new int[5];
-        for (int i = 0; i < randomNumbers2.length; i++) {
-            int d = (int) (Math.random() * (5 - 0) + 0);
-            randomNumbers2[i] = d;
-        }
-        return randomNumbers2;
+        return randomNumbers;
     }
 
-    public static int average1(int[] randomNumbers1) {
+
+    public static int average(int[] randomNumbers) {
         // TODO implement
-        int [] average1 = Arrays.copyOf(randomNumbers1, 5);
+//        int [] average1 = Arrays.copyOf(randomNumbers, 5);
         int average = 0;
-        for (int i = 0; i < average1.length; i++)
-            average = average + average1[i];
+        for (int i = 0; i < randomNumbers.length; i++)
+            average = average + randomNumbers[i];
         return average / 5;
 
     }
-    public static int average2(int[] randomNumbers2) {
-        // TODO implement
-        int [] average1 = Arrays.copyOf(randomNumbers2, 5);
-        int average = 0;
-        for (int i = 0; i < average1.length; i++)
-            average = average + average1[i];
-        return average / 5;
-    }
+
 }
