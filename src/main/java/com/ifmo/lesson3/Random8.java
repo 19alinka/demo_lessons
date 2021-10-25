@@ -31,14 +31,9 @@ public class Random8 {
     public static int[] replaceWithZeros(int[] randomNumbers) {
         // TODO implement
         int[] replaceWithZeros = Arrays.copyOf(randomNumbers, 8);
-        if (randomNumbers[0] % 2 == 1) randomNumbers[0] = 0;
-        if (randomNumbers[1] % 2 == 1) randomNumbers[1] = 0;
-        if (randomNumbers[2] % 2 == 1) randomNumbers[2] = 0;
-        if (randomNumbers[3] % 2 == 1) randomNumbers[3] = 0;
-        if (randomNumbers[4] % 2 == 1) randomNumbers[4] = 0;
-        if (randomNumbers[5] % 2 == 1) randomNumbers[5] = 0;
-        if (randomNumbers[6] % 2 == 1) randomNumbers[6] = 0;
-        if (randomNumbers[7] % 2 == 1) randomNumbers[7] = 0;
+            for (int i = 0; i < randomNumbers.length; i++) {
+                if (randomNumbers[i] % 2 == 1) randomNumbers[i] = 0;
+            }
         return replaceWithZeros;
     }
 }
