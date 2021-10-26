@@ -10,7 +10,7 @@ public class Fibonacci20 {
      */
     public static void main(String[] args) {
         int[] fibonacciNumbers = fibonacciNumbers();
-        System.out.println(Arrays.toString(fibonacciNumbers));
+       // System.out.println(Arrays.toString(fibonacciNumbers));
         // TODO implement
     }
 
@@ -21,11 +21,16 @@ public class Fibonacci20 {
         int a = 0;
         int b = 1;
 
-        for (int i = 1; i < fibonacciNumbers.length; i++) {
-            fibonacciNumbers[0] = 1;
-            fibonacciNumbers[i] = (a + b);
-            a = b;
-            b = fibonacciNumbers[i];
+        for (int i = 0; i < fibonacciNumbers.length; i++) {
+           // fibonacciNumbers[0] = 1;
+            //System.out.print(b + " ");
+            if(i == 0) fibonacciNumbers[i] = 1;
+            if (i > 0) {
+                fibonacciNumbers[i] = (a + b);
+                a = b;
+                b = fibonacciNumbers[i];
+            }
+            System.out.print(fibonacciNumbers[i]);
         }
 
         return fibonacciNumbers;
