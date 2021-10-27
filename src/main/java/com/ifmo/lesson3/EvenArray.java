@@ -11,25 +11,31 @@ public class EvenArray {
     будет размера.2 4 6 … 18 20246…20
      */
     public static void main(String[] args) {
-        int[] evenArray = evenArray();
+        int[] evenArray1 = evenArray1();
+        System.out.println(Arrays.toString(evenArray1));
 
+
+        int[] evenArray2 = evenArray1();
+        System.out.print(Arrays.toString(evenArray2));
 
         // TODO implement
     }
 
-    public static int[] evenArray() {
+    public static int[] evenArray1() {
         // TODO implement
-        int[] evenArray = new int[10];
+        int[] evenArray1 = new int[10];
 
-        for (int e = 0; e < evenArray.length; e++) {
-            evenArray[e] = 2 + (e * 2);
-            System.out.print(evenArray[e] + " ");
+        for (int e = 0; e < evenArray1.length; e++) {
+            evenArray1[e] = 2 + (e * 2);
         }
-        for (int e = 0; e < evenArray.length; e++) {
-            evenArray[e] = 2 + (e * 2);
-            System.out.println(evenArray[e] + "");
-            }
-
-        return evenArray;
+        return evenArray1;
     }
+   /* public static int[] evenArray2() {
+        // TODO implement
+        int[] evenArray2 = new int[10];
+        for (int e = 0; e < evenArray2.length; e++) {
+            evenArray2[e] = 2 + (e * 2);
+        }
+        return evenArray2;
+    }*/
 }
