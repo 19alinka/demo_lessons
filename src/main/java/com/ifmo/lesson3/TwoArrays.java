@@ -34,22 +34,17 @@ public class TwoArrays {
         int[] randomNumbers = new int[5];
         Random random = new Random();
         for (int i = 0; i < randomNumbers.length; i++) {
-//            int d = (int) (Math.random() * (5 - 0) + 0);
             int d = random.nextInt(6);
             randomNumbers[i] = d;
         }
         return randomNumbers;
     }
 
-
     public static int average(int[] randomNumbers) {
         // TODO implement
-//        int [] average1 = Arrays.copyOf(randomNumbers, 5);
         int average = 0;
         for (int i = 0; i < randomNumbers.length; i++)
             average = average + randomNumbers[i];
         return average / 5;
-
     }
-
 }
