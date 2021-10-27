@@ -14,7 +14,7 @@ public class Random8 {
         // TODO implement
 
         int[] replacedWithZeros = replaceWithZeros(randomNumbers);
-        System.out.println(Arrays.toString(replaceWithZeros(randomNumbers)));
+        System.out.println(Arrays.toString(replacedWithZeros));
         // TODO implement
     }
 
@@ -30,10 +30,10 @@ public class Random8 {
 
     public static int[] replaceWithZeros(int[] randomNumbers) {
         // TODO implement
-        int[] replaceWithZeros = Arrays.copyOf(randomNumbers, 8);
-            for (int i = 0; i < randomNumbers.length; i++) {
-                if (i % 2 == 1) randomNumbers[i] = 0;
+        int[] replacedWithZeros = Arrays.copyOf(randomNumbers, 8);
+            for (int i = 0; i < replacedWithZeros.length; i++) {
+                if (i % 2 == 1) replacedWithZeros[i] = 0;
             }
-        return replaceWithZeros;
+        return replacedWithZeros;
     }
 }
