@@ -32,7 +32,7 @@ public class Random8 {
         // TODO implement
         int[] replaceWithZeros = Arrays.copyOf(randomNumbers, 8);
             for (int i = 0; i < randomNumbers.length; i++) {
-                if (randomNumbers[i] % 2 == 1) randomNumbers[i] = 0;
+                if (i % 2 == 1) randomNumbers[i] = 0;
             }
         return replaceWithZeros;
     }
