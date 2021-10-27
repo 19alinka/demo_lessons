@@ -9,15 +9,22 @@ public class UnevenArray {
     1)
      */
     public static void main(String[] args) {
-        int[] unevenArray1 = unevenArray1();
-        System.out.println(Arrays.toString(unevenArray1));
-        int[] unevenArray2 = unevenArray2();
-        System.out.println(Arrays.toString(unevenArray2));
+        int[] unevenArray1 = unevenArray();
+        for (int e = 0; e < unevenArray1.length; e++) {
+            System.out.print(unevenArray1[e] + " ");
+        }
+        System.out.println();
+        for (int e = 49; e >= 0; e--) {
+            System.out.print(unevenArray1[e] + " ");
+        }
+//        System.out.println(Arrays.toString(unevenArray1));
+//        int[] unevenArray2 = unevenArray2();
+//        System.out.println(Arrays.toString(unevenArray2));
         // TODO implement
 
     }
 
-    public static int[] unevenArray1() {
+    public static int[] unevenArray() {
         // TODO implement
         int[] unevenArray1 = new int[50];
 
