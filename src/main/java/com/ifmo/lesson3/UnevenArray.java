@@ -14,6 +14,7 @@ public class UnevenArray {
         int[] unevenArray2 = unevenArray2();
         System.out.println(Arrays.toString(unevenArray2));
         // TODO implement
+
     }
 
     public static int[] unevenArray1() {
@@ -21,9 +22,13 @@ public class UnevenArray {
         int[] unevenArray1 = new int[50];
 
         for (int e = 0; e < unevenArray1.length; e++) {
-            unevenArray1[e] = 1 + (e * 2);
-        }
+                    unevenArray1[e] = 1 + (e * 2);
+                }
+             /*   for (int e = 49; e >= 0; e--) {
+                    unevenArray1[e] = 99 - (e * 2);
+                }*/
         return unevenArray1;
+
     }
 
     public static int[] unevenArray2() {

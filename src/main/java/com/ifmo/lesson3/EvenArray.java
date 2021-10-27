@@ -1,6 +1,5 @@
 package com.ifmo.lesson3;
 
-import java.sql.SQLOutput;
 import java.util.Arrays;
 
 public class EvenArray {
@@ -11,17 +10,17 @@ public class EvenArray {
     будет размера.2 4 6 … 18 20246…20
      */
     public static void main(String[] args) {
-        int[] evenArray1 = evenArray1();
+        int[] evenArray1 = evenArray();
         System.out.println(Arrays.toString(evenArray1));
 
 
-        int[] evenArray2 = evenArray1();
+        int[] evenArray2 = evenArray();
         System.out.print(Arrays.toString(evenArray2));
 
         // TODO implement
     }
 
-    public static int[] evenArray1() {
+    public static int[] evenArray() {
         // TODO implement
         int[] evenArray1 = new int[10];
 
