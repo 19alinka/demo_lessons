@@ -85,19 +85,19 @@ public class Library {
             Shelf shelf = shelves[i];
 
             if (shelf.getBook().equals(book)) {
-                shelf.setQuantity(shelf.getQuantity() - Math.min(shelf.getQuantity(), quantity));
+                int newQuantity = shelf.getQuantity() - Math.min(shelf.getQuantity(), quantity);
+                shelf.setQuantity(newQuantity);
+                if(newQuantity == 0) {
+                    shelves[i] = null;
+                    if(i <= 8) {
+                        System.arraycopy(shelves, i + 1, shelves, i, shelves.length - i - 1);
+                    }
+                    if (i == 9) {
+                        System.arraycopy(shelves, 0, shelves, 0, shelves.length - 1);
+                    }
+                }
                 return quantity;
-            } else if (!shelf.getBook().equals(book)) {
-                return 0;
             }
-            if(quantity == 0) {
-            shelves[i] = null;
-            }
-            System.arraycopy(shelf, 0, shelf, 0, shelves.length); // 1. массив из которого копируется
-                                                                                // 2. с какого элемента копировать
-                                                                                // 3. в какой массив копировать
-                                                                                // 4. с какого элемента начать копирование
-                                                                                // 5. кол-во элементов для копирования
         }
         return 0;
     }
