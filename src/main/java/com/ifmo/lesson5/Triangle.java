@@ -1,16 +1,17 @@
 package com.ifmo.lesson5;
 
 public class Triangle extends Shape {
-    protected final double c = 0.5;
-    protected double a;
-    protected double b;
 
-    public Triangle(double a, double b) {
-        this.a = a;
-        this.b = b;
+    protected final double s = 1.7;
+    protected double a;
+
+    public Triangle(double a) {
+       this.a = a;
+
     }
     @Override
     public double area () {
-        return c * a * b;
+        return ((a * a) * s ) / 4;
     }
 }
+//(a*b*c)/4*r

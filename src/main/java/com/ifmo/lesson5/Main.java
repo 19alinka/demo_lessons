@@ -15,7 +15,7 @@ public class Main {
         Rectangle rectangle = new Rectangle(2, 4);
         System.out.println(rectangle.area());
 
-        Triangle triangle = new Triangle(3,5);
+        Triangle triangle = new Triangle(5);
         System.out.println(triangle.area());
 
         SquareTriangle squareTriangle = new SquareTriangle(3,3);

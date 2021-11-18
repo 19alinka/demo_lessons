@@ -12,12 +12,4 @@ public class Square extends Shape {
         return a * a;
     }
 }
-//public class Square extends Circle {
-//    public Square(double r) {
-//        super(r);
-//    }
-//    @Override
-//    public double area () {
-//        return r * r;
-//    }
-//}
+
