@@ -1,8 +1,5 @@
 package com.ifmo.lesson4;
 
-import com.ifmo.lesson6.Shelf;
-import lesson.Shape;
-
 /**
  * Библиотека помогает вести учет книг: какие книги и сколько в ней хранятся.
  * Библиотека ограничена по числу типов книг, это ограничение задается аргументом
@@ -96,7 +93,7 @@ public class Library {
                         System.arraycopy(shelves, 0, shelves, 0, shelves.length - 1);
                     }
                 }
-                return quantity;
+                return newQuantity;
             }
         }
         return 0;
@@ -113,7 +110,7 @@ public class Library {
         System.out.println(wp2Added);
 
         Book wp3 = new Book("Tolstoy", "War and peace");
-        int wp3Added = library.take(wp3, 3);
+        int wp3Added = library.take(wp3, 2);
         System.out.println(wp3Added);
     }
 }
